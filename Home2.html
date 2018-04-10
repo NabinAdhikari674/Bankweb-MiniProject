@@ -1,0 +1,726 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function function()
+{
+
+if (document.getElementById("id").value== "nabin" && document.getElementById("pass")== "123")
+{
+document.getElementById("logged").value=<a href="#openreg" id="logged"><li class="dropbtn" style="height:29px;position:absolute; top:20px;right:3%; height:29px; border:1px solid white;border-radius:9px;text-align:center;">My ACCOUNT</li></a>
+}
+else
+{
+window.alert("You Are Not Registered !!");
+}
+}
+
+
+</script>
+<title>HOME</title>
+<link rel="stylesheet" href="home2.css">
+</head>
+<body  onload="startTime();" bgcolor="lightgrey">
+
+<div style="padding:13px;  position:fixed; background-color:#d9f5f9; top:1px; width:100%; z-index:1;">
+<ul style="list-style-type:none; display;inline; padding-top:30px; ">
+<li onclick="location.href = "HOME2.html" class="bankname"  id="homepage" style="float:left; position:absolute;left:1px;top:1.5x;bottom:0.3px; width:30%; height:56px;font-size:39px;text-align:center;width:24%;border-radius:5px; ">Bank Management system</li>
+<li  class="dropbtn" style="height:29px;position:absolute; top:22px;:0px; left:28%; height:29px; border:1px;border-radius:5px;width:6%;">E-Services
+<ul class="dropdown-content" style="list-style-type:none;">
+<a href="#myaccount"><li>My Account</li></a>
+<a href="#"><li>SMS Banking</li></a>
+<a href="#"><li>Lost/Stolen ATM/Debit Card</li></a>
+</ul>
+</li>
+<li class="dropbtn" style="height:29px;position:absolute; top:22px;:0px; left:35%; height:29px; border:1px ;border-radius:5px;text-align:center;width:8%">Currency Rate
+<ul class="dropdown-content" style="list-style-type:none;">
+<a href="#rates"><li>Today's Rate</li></a>
+<a href="#calculator"><li>Currency Calculator</li></a>
+</ul>
+</li>
+<li class="dropbtn" style="height:29px;position:absolute; top:22px; left:44%; height:29px; border:1px;border-radius:5px;text-align:center; width:9%;">Learn Banking 
+<ul class="dropdown-content" style="list-style-type:none;">
+<a href="#openplan"><li>Retirement Planning</li></a>
+<a href="#openplan"><li>Student Planning</li></a>
+<a href="#openplan"><li>Managing Accounts</li></a>
+<a href="#openplan"><li>Saving And Budgeting</li></a>
+</ul>
+</li>
+<li class="dropbtn" style="height:29px;position:absolute; top:22px; left:54%; height:29px; border:1px;border-radius:5px;text-align:center;width:6%;">About Us
+<ul class="dropdown-content" style="list-style-type:none;">
+<a href="#contactus"><li>Contact Us</li></a>
+<a href="#supportus"><li>Support Us</li></a>
+<a href="#bankstaffdetails"><li>Bank Staff Details</li></a>
+</ul>
+</li>
+<a href="#openModal" id="logged"><li class="dropbtn" style="height:29px;position:absolute; top:20px; right:9%; height:29px; border:1px solid white;border-radius:9px;text-align:center;">LOG-IN</li></a>
+<a href="#openreg" id="logged"><li class="dropbtn" style="height:29px;position:absolute; top:20px;right:3%; height:29px; border:1px solid white;border-radius:9px;text-align:center;">SIGN-UP</li></a>
+</ul>
+</div>
+
+<div id="openreg" class="modalWindow">
+    <div  style="background-image:url(back1.jpg);">
+        
+<h2>Sign-Up Window</h2>      
+<img src="underline.png" height="35px" width="420px">      
+<form>
+<fieldset>
+<legend align="center"><b>BANK REGISTRATION FORM</b></legend>
+<b>REGISTRATION TYPE</b>
+<select name="reg type">
+<option value="Bank Member">Bank Member [Employee]</option>
+<option value="Regular Customer">Regular Customer</option>
+<option value="CustomerMembership">Customer Membership</option>
+<option value="Customer">Special Membership[VIP]</option>
+</select>
+<br><br><br>
+<b>NAME : </b>
+<input type="text" name="name" placeholder="Type Your Name" size="38">
+<br>
+<b>ADDRESS : </b>
+<input type="text" name="address" placeholder="Type Your ADDRESS" size="34">
+<br>
+<b>PHONE NO. : </b>
+<input type="text" name="phone" placeholder="Type Your PHONE NO." size="32">
+<br>
+<br>
+<b>GENDER : </b>
+<br>
+<input type="checkbox" name="male" checked> MALE
+<br>
+<input type="checkbox" name="female"> FEMALE
+<br>
+<b>AGE : </b>
+<input type="text" name="age" placeholder="Enter Age" size="5">
+<br>
+<br><br>
+<b>Department Assigned To</b>
+<select name="department">
+<option value="Executive">Executive</option>
+<option value="Management">Management</option>
+<option value="Commercial">Commercial</option>
+<option value="E-Banking">E-Banking</option>
+<option value="Cash Management">Cash Management</option>
+<option value="Security">Security</option>
+<option value="Other">Other</option>
+</select>
+<br>
+<b>Working Hours And Time Slot</b>
+<select name="Working Hours">
+<option value="8">8 Hours[9-5]</option>
+<option value="6">6 Hours[10-4]</option>
+<option value="4">4 Hours[11-3]</option>
+<option value="7">7 Hours[5pm-12am][Night Duty]</option>
+<option value="9">9 Hours[12am-9am][Night Duty]</option>
+</select>
+
+<br><br>
+<textarea rows="5" cols="50" name="description">
+Enter The Description For The Staff
+</textarea>
+<br><br>
+<b>Submit Identification Documents Avaliable</b>
+<input type="file">
+<br>
+<b>Submit Educational Documents Available </b>
+<input type="file">
+<br><br><br>
+<input type="reset" class="botton" value="RESET" style="background-color:red; width:18%; color:black;">
+<br><br>
+<input type="submit" class="botton" value="LOG IN" style="background-color: #4CAF50; width:30%; color:white;">
+<br>
+<br>
+</fieldset>
+</form>
+<div class="botton" style="background-color:lightblue; ">
+<a href="#ok" title="Press To Cancel" class="ok"><b>CANCEL</b></a>
+</div>
+<br><br>
+</div>
+</div>
+<div id="openModal" class="modalWindow" >
+    <div style="background-image:url(back1.jpg);" >
+<br> 
+<h2>Login Window</h2>
+<img src="underline.png" height="35px" width="420px">   
+<br><br>    
+<fieldset> 
+<legend><p><b>Enter Your Username and Password To Login</b></p></legend> 
+<br><br><br>
+<form>
+<table width="430px" height="80px" border="1px" cellspacing="5" cellpadding="3px" style="border-collapse:collapse;" bordercolor="gold" align="center";>
+<tr>
+<th>Username/Email :</th>
+<th>
+<input type="textbox" name="username" id="id" placeholder="Enter Your Username or Email" size="40"><br>
+</th>
+</tr>
+<tr>
+<th>Password :</th>
+<th>
+<input type="password" name="password" id="pass" placeholder="Enter Your Password" size="40">
+</th>
+</tr>
+</table>
+<br>
+<input type="reset" class="botton" value="RESET" style="background-color:red; width:18%; color:black;">
+<br><br>
+<input type="submit" class="botton" onclick="function();" value="LOG IN"  style="background-color: #4CAF50; width:30%; color:white;">
+
+</form>
+<br>
+</fieldset>
+<br>
+<div class="botton" style="background-color:lightblue; ">
+<a href="#ok" title="Press To Cancel" class="ok"><b>CANCEL</b></a>
+</div>
+<br><br>
+</div>
+</div>
+<div id="rates" class="modalWindow" >
+<div style="background-image:url(back1.jpg);" >
+<div class="botton" style="background-color:lightblue; position:absolute; top:5px; right:1%; height:3%; width:5%; ">
+<a href="#ok" title="Press To Cancel" class="ok"><b>X</b></a>
+</div>
+<br>
+<h2>Currency Exchange Rates</h2>
+<br><br>
+<fieldset>
+<legend>Currency Rates For Today</legend>
+<br><br>
+<table  cellpadding="2" width="495px" height="500" border="2" cellspacing="2"  style="border-collapse:collapse;" bordercolor="gold" align="center"; >
+<tr>
+<th><b>CURRENCY NAME</b></th>
+<th><b>UNITS</b></th>
+<th><b>VALUE IN INR[Rs]</b></th>
+</tr>
+<tr>
+<td>US Dollar</td>
+<td>1</td>
+<td>65</td>
+</tr>
+<tr>
+<td>Euro</td>
+<td>1</td>
+<td>68.07</td>
+</tr>
+<tr>
+<td>Aus Dollar</td>
+<td>1</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Singapore Dollar</td>
+<td>1</td>
+<td>45.75</td>
+</tr>
+<tr>
+<td>Nepali Rs</td>
+<td>1</td>
+<td>0.625</td>
+</tr>
+<tr>
+<td>Japanese Yen</td>
+<td>1</td>
+<td>0.58</td>
+</tr>
+<tr>
+<td>Korean Won</td>
+<td>1</td>
+<td>0.06</td>
+</tr>
+<tr>
+<td>NewZealand</td>
+<td>1</td>
+<td>44.56</td>
+</tr>
+</table>
+</fieldset>
+</div>
+</div>
+<div id="calculator" class="modalWindow" >
+<div style="background-color:skyblue;" >
+<div class="botton" style="background-color:lightblue; position:absolute; top:5px; right:1%; height:7%; width:6%; ">
+<a href="#ok" title="Press To Cancel" class="ok"><b>X</b></a>
+</div>
+<br><br>
+<fieldset>
+<legend>CURRENCY CALCULATOR</legend>
+<br><br>
+<form>
+<b>Dollar</b>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="dollarin" oninput="fun1();"><br>
+<b>Australlian Dollars </b><input type="text" id="ausin" oninput="fun2(); "><br>
+<b>Euro </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="euroin" oninput="fun3();"><br>
+<b>Nepali Rs  </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="nepalin" oninput="fun4();"><br>
+<b>INDIAN Rs. </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="rsout" size="28">
+<input type="reset" value="RESET">
+<p id="exchangetext" >CURRENCY CALCULATOR[ON The Basis Of Today's Currency Rates]</p>
+<script>
+function fun1()
+{
+var d;
+d=document.getElementById("dollarin").value;
+document.getElementById("rsout").value=(d*65);
+}
+function fun2()
+{
+var a;
+a=document.getElementById("ausin").value;
+document.getElementById("rsout").value=(a*100);
+}
+function fun3()
+{
+var e;
+e=document.getElementById("euroin").value;
+document.getElementById("rsout").value=(e*68.07);
+}
+function fun4()
+{
+var n;
+n=document.getElementById("nepalin").value;
+document.getElementById("rsout").value=(n*0.652);
+}
+</script>
+</form>
+</fieldset>
+<br>
+</div>
+</div>
+<div id ="openplan" class="modalWindow">
+<div  style="background-image:url(back1.jpg); position:absolute; left:10%; top:0px; width:80%; background-color:skyblue;">
+<br>
+<a href="#ok" class="botton" style="background-color:red; float:right;position:absolute; top:0px; right:2%;height:2%; width:2%; "title="Press To Cancel" class="ok"><b>X</b></a>
+
+<hr>
+<h1 align="center" style="font-size:35px;">PLANNINGS</h1>
+<hr><br><br>
+<fieldset>
+<legend style="font-size:28px;">RETIREMENT PLANNING</legend>
+<h2>We bring you simple and hassle-free solutions to get you started on your retirement plan.</h2>
+<p style="font-size:20px;">
+Asia is fast growing older. Its number of elderly persons is expected to triple from 438 million in 2010 to more than 1.26 billion by 2050.
+
+While most Asians, including Singaporeans, hold high expectations for their retirement years, many are leaving it too late to make their hopes a reality.
+<img src="rplan.png" style="height:120px; z-index:0; float:left; width:32%;">
+Almost three-quarters of Singaporeans, for example, plan to retire between 55 and 65, and 85% expect to receive an average of S$3,500 per month for 15 to 20 years or more.
+Only a quarter of them have implemented a financial plan to make that happen.
+The report finds there are several reasons why Singaporeans are failing to prepare for their post-work years. Many see retirement planning as an intimidating task.
+
+The DBS Retirement report “The Best is Yet to Be” explores the shifts that are becoming a major challenge for Asia as a whole, and Singapore in particular.
+
+Our Wealth Managers can guide you and help you prepare for your retirement.
+</p>
+</fieldset>
+<br><br>
+<fieldset>
+<legend style="font-size:28px;">STUDENT PLANNING</legend>
+<p style="font-size: 20px;">
+No monthly fee, unlimited transactions. It's banking made just for you
+<img src="pig.png" style="height:50px; z-index:0; float:left; width:10%;">
+<img src="stuloan.png" style="height:250px; z-index:0; float:right; width:50%;">
+Monthly fee
+FREE
+Top reasons to choose this account
+<br>
+*Perfect if you are attending college, university, or CEGEP full time<br>
+*No monthly fees<br>
+*2 Free Interac e-Transfers per month<br>
+*Unlimited transactions with Scotia OnLine, Mobile Banking Teller, and the ABM2<br>
+*Plus, earn SCENE Rewards<br>
+*Ideal account to use with Mobile Wallet
+
+</p>
+</fieldset>
+<br><br>
+<fieldset>
+<legend style="font-size:28px;">SAVING AND BUDGETING</legend>
+<img src="pigsave.jpg"style="height:79px; z-index:0; float:left; width:15%;">
+<img src="rain.jpg"style="height:250px; z-index:0; float:right; width:20%;">
+<p style="font-size:20px;">
+An automatic monthly savings account with special interest rates giving you flexibility and control.
+
+eMySavings  Account
+
+DBS eMySavings Account (eMSA) is a hassle-free way to keep up with your monthly savings goals, with special interest rates that make your money work better for you.
+
+Benefits :
+
+*Interest Benefits: enjoy special interest rates<br>
+*Convenience: a preset monthly savings amount that allows you to save on the savings date1 that works best for you (S$50 to S$3000, in multiples of S$10, and a date between the 1st and 25th of the month).<br>
+*Flexibility: amend your savings amount and crediting date<br>
+*Access your account anytime through our wide ATM network, iBanking and digibank app.<br>
+*eStatements delivered to you on a quarterly basis.
+</p>
+</fieldset>
+
+
+
+</div>
+</div>
+<div id="myaccount" class ="modalWindow" style=" position:absolute;">
+<br>
+<div style="z-index:0; position :fixed; align:center; width:100%; background-color:beige;">
+<hr>
+<p style="text-align:center; font-size:40px; color:blue;">MY ACCOUNT</p>
+<hr>
+</div>
+<br><br><br><br>
+<div style="position:absolute; right:25%; width:50%;">
+<a href="#ok" class="botton" style="background-color:skyblue; float:right;position:absolute; top:0px; right:2%;height:2%; width:2%; "title="Press To Cancel" class="ok"><b>X</b></a>
+
+<fieldset>
+<legend><h2>Account Details</h2></legend>
+<br><br>
+ <h3>Account Name : </h3><button type="button">Bank Management Fund</button> <br><br>
+ <h3>Account No.  : </h3><button type="button">102564-744161-5-548415-55</button> <br><br>
+ <h3>Account Reg. : </h3><button type="button">125-4569</button> <br><br>
+ <h3>Branch Code  : </h3><button type="button">977</button> <br><br>
+</fieldset>
+
+<fieldset>
+<legend><h2>Account Holder Details</h2></legend>
+<br><br>
+ <h3>Name : </h3><button type="button">BankSYSTEM</button> <br><br><br>
+ <h3>Address : </h3><button type="button">Phagwara,LPU</button> <button type="button">PUNJAB</button> <button type="button">INDIA</button> <button type="button">11104</button>  <br><br>
+ <h3>Age & Sex:  </h3><button type="button">25</button>  <button type="button">MALE</button> <br><br>
+ <h3>Email : </h3><button type="button">bankmanagementsystem@gmail.com</button> <br><br>
+ <h3>Phone NO. : </h3><button type="button">9854655256</button> <br><br>
+</fieldset>
+<fieldset>
+<legend><h2>Account Status</h2></legend>
+<h3>Total Balance  : </h3> <button type="button">12,000,000 $</button> <br><br>
+<h3>Last Transaction Date & ID:</h3> <button type="button">12/04/2017</button> <button type="button"> ID :12458</button> <br><br>
+</fieldset>
+</div>
+<br><br><br><br><br><br><br><br>
+<div style=" float:left;">
+<fieldset>
+<legend><h2>For Credit</h2></legend>
+Date :  <input type="text"placeholder="dd/mm/yyyy"><br><br>
+Account No. <input type="text"><input type="text"> <br><br>
+Account Name  <input type="text"><br><br>
+Amount : <input type="text" id="dollarinc" oninput="fund();"><br><br><br>
+Total Balance in The Account :  <input type="text" id="rsout" >
+</fieldset>
+<script>
+function fund()
+{ 
+d=document.getElementById("dollarinc").value;
+document.getElementById("rsout").value=d+12000000;
+}
+</script>
+<br><br><br><br><br><br><br><br>
+
+</div>
+<div style=" float:right;">
+<fieldset>
+<legend><h2>For Debit</h2></legend>
+Date :  <input type="text"placeholder="dd/mm/yyyy"><br><br>
+Account No. <input type="text"><input type="text"> <br><br>
+Account Name  <input type="text"><br><br>
+Amount : <input type="text" id="dollarind" oninput="func();"><br><br><br>
+Total Balance in The Account :  <input type="text" id="rsoutout" >
+</fieldset>
+<script>
+function func()
+{
+c=document.getElementById("dollarind").value;
+document.getElementById("rsoutout").value=12000000-c;
+}
+</script>
+<br><br><br><br><br><br><br><br>
+
+</div>
+
+<br><br><br><br><br>
+
+
+</div>
+<div id="supportus" class="modalWindow">
+<div  style="background-color:skyblue; height:600px; width:80%;">
+<a href="#ok" title="Press To Cancel" class="ok" style="background-color:red; position:absolute; right:2%;"><b>CANCEL</b></a>
+<form>
+<center>
+<br>
+<p style="font-size:30px;"> SUPPORT US PAGE</p>
+<br>
+<img src="underline.png" height="60px" width="50%">
+<br><br><br><br>
+Leave your Email <input type ="text"name="email" placeholder="email address"/>
+<br>
+<br>
+DONATE US FOR OUR BANK
+<br>
+<br>
+Be Our Partner
+<br>
+<br>
+Your Bank Name <input type ="text"name="name" placeholder="Bank Name"/>
+<br>
+<br>
+address<input type ="text"name="address" placeholder="address"/>
+<br>
+<br>
+A/c no. : <input type ="text"name="account no" placeholder="A/c no."/> 
+<br>
+<br>
+<button type ="text">submit</button>
+</center>
+</form>
+
+
+
+
+
+
+
+
+</div>
+</div>
+<div id="contactus" class="modalWindow">
+<div style="background-color:skyblue; height:450px; width:48%;">
+
+
+<a href="#ok" title="Press To Cancel" class="ok" style="background-color:red; position:absolute; right:2%;"><b>CANCEL</b></a>
+
+<form>
+
+<center>
+<br>
+<h1><B><I><U>CONTACT US</U><I><B></h1>
+<img src="underline.png" height="30px" width="55%" >
+<br>
+<br>
+call us on <button type="button" class="cancelbtn"><u>9779353040</u></button>
+<br>
+<br>
+messege us on <input type="button" value="FACEBOOK" onclick="window.location.href='https://www.facebook.com/'"></button> <input type="button" value="GMAIL" onclick="window.location.href='https://www.gmail.com/'"></button>
+<br>
+<br>
+Address : <u>Punjab National Bank,LPU branch,Phagwara.</u>
+<br>
+<br>
+Our Emails:   <u>nabinadhikari674@gmail.com</u><br>
+              <u>vamshi.b2017@gmail.com</u>
+            
+<br>
+<br>
+Leave your Email <input type ="text"name="email" placeholder="email address"/>
+<br>
+<br>
+<button type ="text">submit</button>
+<br>
+<br>
+<input type="button" value="SUPPORT US" onclick="window.location.href='#supportus'">
+</center>
+</form>
+
+</div>
+</div>
+
+<div id="bankstaffdetails" class="modalWindow">
+<div style="background-color:skyblue; height:740px; width:50%;">
+<a href="#ok" title="Press To Cancel" class="ok" style="background-color:red; position:absolute; right:2%;"><b>CANCEL</b></a>
+<br>
+<fieldset>
+<legend><p style="font-size:15px;">BANK STAFF DETAILS</p></legend>
+<br><br>
+<h2 ><u>ADMINISTRATIVE DEPARTMENT</u></h2>
+<center>
+<table border="6" cellspacing="10" cellpadding="15" >
+<th>HEAD OF DEPARTMENT</th>
+<th colspan=3>NAME  OF THE PERSON</th>
+<tr>
+<td align="center">MANAGER</td>
+<td align="center">K.DURGA PRASAD</td>
+<td align="center">K.VEERENDRA</td>
+<td align="center">K.VINAY CHOWDARY</td>
+</tr>
+<tr>
+<td align="center">CO-MANAGER</td>
+<td align="center">D.KRISHNA</td>
+<td align="center">V.SATYA</td>
+<td align="center">S.SAI</td>
+</tr>
+</table>
+<br><br>
+<table border="6" cellspacing="10" cellpadding="15" >
+<h2><u>COMMERCIAL DEPARMENT</u></h2>
+<th colspan=2 >CASHIERS</th>
+<th colspan=3>NAME  OF THE PERSON</th>
+<tr>
+<td  align="center" rowspan=2>ACCOUNT MANAGMENT</td>
+<td align="center" >NEW ACCOUNT/SERVICE MANAGMENT</td>
+<td align="center">K.ANJALI</td>
+<td align="center">K.TAMBE</td>
+<td align="center">K.WATSON</td></tr>
+<tr>
+<td align="center" >OTHER ACCOUNT MANAGERS</td>
+<td align="center">D.VIJAY</td>
+<td align="center">V.VINAY</td>
+<td align="center">S.SHIVA</td>
+</tr>
+</table>
+<br><br>
+<table border="6" cellspacing="10" cellpadding="15" >
+<h2><u>OTHERS</u></h2>
+<th></th>
+<th colspan=3 >NAME  OF THE PERSON</th>
+<tr>
+<td align="center">RECEPTIONISTS</td>
+<td  align="center">K.MAHESH</td>
+<td align="center">NTR</td>
+<td  align="center">D.PRABASH</td>
+</tr>
+<tr>
+<td  align="center">CLIENT HELPES</td>
+<td align="center">M.DHONI</td>
+<td align="center">V.SATYA</td>
+<td  align="center">S.SAI</td>
+</tr>
+</table>
+<br><br>
+<table border="6" cellspacing="10" cellpadding="15" >
+<h2><u>SECURITY TEAM</u></h2>
+<th></th>
+<th colspan=3>NAME  OF THE PERSON</th>
+<tr>
+<td  align="center">AT GAIT</td>
+<td  align="center">K.DURGA PRASAD</td>
+<td align="center">K.VEERENDRA</td>
+<td align="center">K.VINAY CHOWDARY</td>
+</tr>
+<tr>
+<td align="center">BANK(INSIDE)</td>
+<td  align="center">D.KRISHNA</td>
+<td  align="center">V.SATYA</td>
+<td  align="center">S.SAI</td>
+</tr>
+<tr>
+<td align="center">BANK(OUTSIDE)</td>
+<td align="center">D.TEJA</td>
+<td  align="center">V.VISHNU</td>
+<td  align="center">S.KUSHAL</td>
+</tr>
+
+
+</table>
+</center>
+</fieldset>
+
+</div>
+</div>
+
+
+<br><br><br><br>
+<img  id="changingimg1" class="animi w3-animati-top" style="height:820px; z-index:0; float:center; width:100%;">
+<script>
+var imgArray = new Array("support.jpg","holiday.png","loan.jpg","burgerloan.jpg","mobile.jpeg");
+var imgCount = 0;
+function startTime()
+ {
+ 
+    if(imgCount == imgArray.length)
+    {
+        imgCount = 0;
+    }
+    document.getElementById("changingimg1").src = imgArray[imgCount];
+    imgCount++;
+    setTimeout("startTime()", 4000);
+ }
+</script>
+
+
+<div style="background-color:#d9f5f9; height:250px; width:100%;">
+<br>
+<div style="position :absolute; left:3%;">
+<p>
+<h5>Reach Us At at Gmail </h5><br>
+*nabinadhikari674@gmail.com <br>
+*krishna1998@gmail.com<br>
+*Devi9808@gmail.com<br>
+</p>
+</div>
+<div style="position :absolute; left:45%;">
+<p><h3>Bank Made For Us All : Bank OF [...]</h3></p>
+</div>
+<div style="position :absolute; right:3%;">
+<p>
+<h5>Follow  Us At at </h5><br>
+*FACEBOOK<br>
+*TWITTER<br>
+*GMAIL<br>
+</p>
+</div>
+<br><br><br>
+<div style="position :absolute; left:18%;">
+<h4>LIFE PLANNING</h4>
+<p><br>
+Providing Following PLANS :<br><br>
+<u>Retirement Plan</u><br>
+<u>Student Plan</u><br>
+<u>House Plan</u><br>
+<u>Family Loan Plan</u><br>
+<u>Agricultural Loan Plan</u><br>
+</p>
+
+</div>
+<div style="position :absolute; left:38%;">
+<h4>Loans </h4>
+<p><br>
+Providing Following LOANS :<br><br>
+<u>Student Loan</u><br>
+<u>Agriculture Loan</u><br>
+<u>Business Loan</u><br>
+<u>Home Loan</u><br>
+<u>regular Loans</u><br>
+</p>
+</div>
+<div style="position :absolute; left:58%;">
+<h4>Services</h4>
+<p><br>
+Providing Following SERVICES :<br><br>
+<u>E-Services</u><br>
+<u>Internet Banking</u><br>
+<u>Mobile Banking</u><br>
+<u>ATM/Debit/Credit Cards</u><br>
+<u>Master/Visa Cards</u><br>
+<u>SMS Banking</u><br>
+</p>
+</div>
+
+<div style="position :absolute; left:78%;">
+<h4>Learning</h4>
+<p><br>
+Learn About Following :<br><br>
+<u>Getting Started With Us</u><br>
+<u>Saving</u><br>
+<u>Budgeting</u><br>
+<u>Account Management</u><br>
+<u>Our Policies And Offers</u><br>
+<u>Management</u><br>
+<u>Our Staff and Workers</u><br>
+</p>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<div style="position :absolute; left:28%;">
+<p>
+site design / logo © 2017 Nabin Adhikari Inc; 
+user contributions licensed under cc by-sa 3.0 with copyright required & attribution required
+rev 2017.4.10.25653<br>
+ <p style="text-align:center;">copyright reserved@nabin
+</p>
+</div>
+
+</div>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
